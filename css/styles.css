@@ -224,6 +224,31 @@ img {
   background: #404bbf;
   fill: var(--primery-white-color);
 }
+.btn-send {
+  color: var(--primery-white-color);
+  background: var(--primery-color);
+  display: flex;
+  align-items: center;
+  padding: 16px 65px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.btn-send:hover,
+.btn-send:focus {
+  background: #404bbf;
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -254,6 +279,9 @@ img {
 }
 
 /* Modal Forms */
+.modal-form {
+  margin: 16px 24px;
+}
 .modal-title {
   margin-top: 72px;
 
@@ -263,7 +291,68 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.form-label {
+  display: block;
+  margin-bottom: 4px;
 
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: #8E8F99;
+}
+.field {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: #757575;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-input {
+  padding: 8px 34px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus {
+  border-color: var(--primery-color);
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus + .input-icon {
+  fill: var(--primery-color);
+}
+.textarea {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+  
+  padding: 8px 16px;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.policy-text {
+  color: var(--primery-color);
+}
 .btn-primery:hover,
 .btn-primery:focus,
 .btn-primery:active {
